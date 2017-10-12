@@ -8,6 +8,7 @@
     rel="stylesheet">
   </head>
   <body>
+
     <!--header-->
     <header>
         <div id="logo">
@@ -15,6 +16,7 @@
           <span><h1 class="bold">COLMAR</h1></span>
           <span><h1>ACADEMY</h1>
         </div>
+
         <!--navigation-->
           <nav>
             <ul>
@@ -25,17 +27,16 @@
             <ul>
         </nav>
       </div>
-      <div id="nav-icons">
-        <section id="navigation">
-          <nav class="hiddenDesktop">
-              <span class="navigationIcon"><img src="resources/images/ic-logo.png"/></span>
-              <span class="navigationIcon"><img src="resources/images/ic-on-campus.png"/></span>
-              <span class="navigationIcon"><img src="resources/images/ic-online.png"/></span>
-              <span class="navigationIcon"><img src="resources/images/ic-login.png"/></span>
-          </nav>
-        </section>
-      </div>
     </header>
+
+      <!--navigation mobile section-->
+      <div id="nav-mobile">
+              <a href="#"><img src="resources/images/ic-logo.png"/></a>
+              <a href="#"><img src="resources/images/ic-on-campus.png"/></a>
+              <a href="#"><img src="resources/images/ic-online.png"/></a>
+              <a href="#"><img src="resources/images/ic-login.png"/></a>
+      </div>
+
     <!--banner section-->
     <section id="banner">
       <div class="left">
@@ -43,12 +44,27 @@
       </div>
       <div class="right">
         <div class="bannertext">
+          <h2>Learn something new everyday</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <button>Start here</button>
+        </div>
+      </div>
+    </section>
+
+    <!--banner mobile section-->
+  <div id="banner-mobile">
+    <div class="left">
+      <img src="resources/images/banner.jpg" alt="students studying"/>
+    </div>
+    <div class="right">
+      <div id="bannertext-mobile">
         <h2>Learn something new everyday</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <button>Start here</button>
       </div>
     </div>
-  </section>
+  </div>
+
   <!--information section-->
   <section id="information">
     <div class="left">
@@ -86,6 +102,37 @@
       </div>
     </div>
   </section>
+
+  <!--information mobile section-->
+  <div id="information-mobile">
+    <div class="right">
+      <div class="information-image-mobile">
+        <img src="resources/images/information-orientation.jpg" alt="students walking"/>
+        <div class="information-content-mobile">
+          <h3>Orientation date</h3>
+          <p>Tues 10/11 &amp; Weds 10/12: 8am-3pm</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="information-image-mobile">
+        <img src="resources/images/information-campus.jpg" alt="students in classroom"/>
+        <div class="information-content-mobile">
+          <h3>Our campus</h3>
+          <p>Find which campus is close by to you</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="information-image-mobile">
+        <img src="resources/images/information-guest-lecture.jpg" alt="guest lecturer"/>
+        <div class="information-content-mobile">
+          <h3>Our guest lecture</h3>
+          <p>Join a keynote with Oliver sack about music in medical treatment</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--courses section-->
   <section id="courses">
     <h2>Start Learning</h2>
@@ -129,12 +176,51 @@
        </div>
      </div>
    </section>
+
+   <!--courses mobile section-->
+   <div id="courses-mobile">
+     <div class="intoduction">
+     <h2>Start Learning</h2>
+   </div>
+   <div class="course-list-mobile">
+     <h3>Software enginnering</h3>
+     <h4>COURSES</h4>
+       <p>Web Development, Mobile Development, iOT, APIs</p>
+   </div>
+   <div class="course-list-mobile">
+     <h3>Computer art</h3>
+     <h4>COURSES</h4>
+       <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,
+       Computer Animation</p>
+    </div>
+  <div class="course-list-mobile">
+    <h3>Design</h3>
+    <h4>COURSES</h4>
+      <p>User Experience Design, User Research, Visual Design</p>
+  </div>
+  <div class="course-list-mobile">
+    <h3>Data</h3>
+    <h4>COURSES</h4>
+      <p>Data Science, Big data, SQL, Data Visualization</p>
+  </div>
+  <div class="course-list-mobile">
+    <h3>Business</h3>
+    <h4>COURSES</h4>
+      <p>Product Development, Business Development, Startup</p>
+  </div>
+  <div class="course-list-mobile">
+    <h3>Marketing</h3>
+    <h4>COURSES</h4>
+      <p>Analytics, Content marketing, Mobile Marketing</p>
+  </div>
+</div>
+
    <!--thesis section-->
    <section id="thesis-container">
      <h2>Thesis Exhibit</h2>
      <div id="thesis">
        <div class="left">
-         <video src="resources/videos/thesis.mp4">
+         <video src="resources/videos/thesis.mp4" controls>
            Conteny is not playable in this browser.
          </video>
          <h3>Reimagine urban</h3>
@@ -158,7 +244,20 @@
                </div>
              </div>
            </div>
+         </div>
          </section>
+
+         <!--thesis mobile section-->
+         <div id="thesis-mobile">
+           <div class="thesis-title-mobile">
+             <h2>Thesis Exhibit</h2>
+           </div>
+           <div class="thesis-video-mobile">
+             <video src="resources/videos/thesis.mp4" controls>
+               Conteny is not playable in this browser.
+             </video>
+           </div>
+         </div>
          <!--footer-->
          <footer>
            <h5>&copy;Colmar Academy. All rights reserved</h5>

@@ -72,10 +72,6 @@ header nav ul li a {
   color: rgb(0, 0, 0);
 }
 
-#nav-icons {
-  display: none;
-}
-
 /*Banner section*/
 
 #banner {
@@ -222,7 +218,7 @@ header nav ul li a {
 
 .course-container h4, .course-container p {
   font-weight: normal;
-  color: #CACACA;
+  color: rgb(165, 162, 162)
   margin-left: 1rem;
 }
 
@@ -292,28 +288,80 @@ footer div a {
   color: rgb(165, 162, 162);
 }
 
+/*desktop hidden section*/
+
+#nav-mobile, #banner-mobile, #information-mobile, #courses-mobile, #thesis-mobile {
+  display: none;
+}
 
 /*media queries*/
 
 @media only screen and (max-width: 600px) {
 
-  header {
+  html {
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+  }
+
+  div {
+    display: block;
+  }
+
+  #logo, #information .left, header nav ul li, .course-container img, .course-container h4,
+  .course-container p, #thesis-container .right, #thesis h3, #thesis p{
+    display: none;
+  }
+
+  #nav-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     height: 4rem;
+    width: 100%
+  }
+
+  #banner-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: rgb(211, 211, 211);
+  }
+
+  #banner-mobile img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  #bannertext-mobile {
+    font-family: "Cabin", sans-serif;
+    padding: 0 1rem;
+  }
+
+  #bannertext-mobile h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(128, 127, 127);
+  }
+
+  .information-image-mobile {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 
-  #nav-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .information-image-mobile img {
+    width: 100%;
   }
 
-  #logo {
-    display: none;
+  .information-content-mobile {
+    padding-left: 1rem;
   }
 
-  header nav ul li {
-    display: none;
-  }
+
+
 
 }
