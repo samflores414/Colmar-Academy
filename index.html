@@ -4,13 +4,18 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700"
+    rel="stylesheet">
   </head>
   <body>
+    <!--header-->
     <header>
-        <div class="logo">
-          <img src="resources/images/ic-logo.png">
-          <h1><span class="bold">Colmar</span>Academy</h1>
+        <div id="logo">
+          <img src="resources/images/ic-logo.png" alt="Colmar Academy Logo"/>
+          <span><h1 class="bold">COLMAR</h1></span>
+          <span><h1>ACADEMY</h1>
         </div>
+        <!--navigation-->
           <nav>
             <ul>
               <li>On Campus</li>
@@ -20,18 +25,31 @@
             <ul>
         </nav>
       </div>
+      <div id="nav-icons">
+        <section id="navigation">
+          <nav class="hiddenDesktop">
+              <span class="navigationIcon"><img src="resources/images/ic-logo.png"/></span>
+              <span class="navigationIcon"><img src="resources/images/ic-on-campus.png"/></span>
+              <span class="navigationIcon"><img src="resources/images/ic-online.png"/></span>
+              <span class="navigationIcon"><img src="resources/images/ic-login.png"/></span>
+          </nav>
+        </section>
+      </div>
     </header>
+    <!--banner section-->
     <section id="banner">
       <div class="left">
         <img src="resources/images/banner.jpg" alt="students studying"/>
       </div>
-      <div class="banner-content">
+      <div class="right">
+        <div class="bannertext">
         <h2>Learn something new everyday</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <button>Start here</button>
       </div>
     </div>
   </section>
+  <!--information section-->
   <section id="information">
     <div class="left">
       <img src="resources/images/information-main.jpg" alt="student reading book"/>
@@ -68,6 +86,7 @@
       </div>
     </div>
   </section>
+  <!--courses section-->
   <section id="courses">
     <h2>Start Learning</h2>
     <div id="courses-list">
@@ -81,7 +100,7 @@
         <img src="resources/images/course-computer-art.jpg" alt=" student holding mobile phone"/>
           <h3>Computer art</h3>
           <h4>COURSES</h4>
-          <p>Imaginmg &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,
+          <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,
             Computer Animation</p>
        </div>
        <div class="course-container">
@@ -110,9 +129,10 @@
        </div>
      </div>
    </section>
+   <!--thesis section-->
    <section id="thesis-container">
-     <h2>Theis Exhibit</h2>
-     <div id="thesis-content">
+     <h2>Thesis Exhibit</h2>
+     <div id="thesis">
        <div class="left">
          <video src="resources/videos/thesis.mp4">
            Conteny is not playable in this browser.
@@ -129,6 +149,7 @@
                <h3>Fisma: Design and Prototype</h3>
                <p>Designer showcase of new prototype product</p>
              </div>
+           </div>
              <div class="thesis-image">
                <img src="resources/images/thesis-now-and-then.jpg" alt="empire state building"/>
                <div class="thesis-content">
@@ -138,6 +159,7 @@
              </div>
            </div>
          </section>
+         <!--footer-->
          <footer>
            <h5>&copy;Colmar Academy. All rights reserved</h5>
            <div id="footer-links">
