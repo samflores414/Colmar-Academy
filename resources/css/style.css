@@ -307,8 +307,8 @@ footer div a {
     display: block;
   }
 
-  #logo, #information .left, header nav ul li, .course-container img, .course-container h4,
-  .course-container p, #thesis-container .right, #thesis h3, #thesis p{
+  #logo, #banner, #information .left, header nav ul li, .course-container img,
+  .course-container h4, .course-container p, #thesis-container .right, #thesis h3, #thesis p{
     display: none;
   }
 
@@ -324,12 +324,11 @@ footer div a {
   #banner-mobile {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding-bottom: 2rem;
     background-color: rgb(211, 211, 211);
   }
 
-  #banner-mobile img {
+  #banner-mobile .left img {
     width: 100%;
     height: auto;
     padding-bottom: 2rem;
@@ -361,6 +360,11 @@ footer div a {
     padding-left: 1rem;
   }
 
+  .course-list-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 
 
