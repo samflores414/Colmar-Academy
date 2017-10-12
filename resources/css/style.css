@@ -111,6 +111,7 @@ header nav ul li a {
 .left {
   padding: 2rem 1.5rem;
   width: 60%;
+  border-right: 1px solid lightgrey;
 }
 
 .left img {
@@ -120,7 +121,6 @@ header nav ul li a {
 /*Right content styling*/
 
 .right {
-  border-left: 1px solid lightgrey;
   padding: 1rem 1.5rem;
   width: 40%;
 }
@@ -290,7 +290,12 @@ footer div a {
 
 /*desktop hidden section*/
 
-#nav-mobile, #banner-mobile, #information-mobile, #courses-mobile, #thesis-mobile {
+#nav-mobile,
+#banner-mobile,
+#bannertext-mobile,
+#information-mobile,
+#courses-mobile,
+#thesis-mobile {
   display: none;
 }
 
@@ -307,8 +312,16 @@ footer div a {
     display: block;
   }
 
-  #logo, #banner, #information .left, header nav ul li, .course-container img,
-  .course-container h4, .course-container p, #thesis-container .right, #thesis h3, #thesis p{
+  #logo,
+  #banner,
+  #information .left,
+  header nav ul li,
+  .course-container img,
+  .course-container h4,
+  .course-container p,
+  #thesis-container .right,
+  #thesis h3,
+  #thesis p{
     display: none;
   }
 
@@ -325,25 +338,29 @@ footer div a {
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
+  }
+
+  #banner-mobile img {
+    width: 100%;
+  }
+
+  .bannertext-mobile {
+    width: 100%;
+    font-family: "Cabin", sans-serif;
+    padding: 0 1rem;
     background-color: rgb(211, 211, 211);
   }
 
-  #banner-mobile .left img {
-    width: 100%;
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
-  #bannertext-mobile {
-    font-family: "Cabin", sans-serif;
-    padding: 0 1rem;
-  }
-
-  #bannertext-mobile h2 {
+  .bannertext-mobile h2 {
     padding-bottom: 2rem;
     font-size: 2rem;
     font-weight: bold;
     color: rgb(128, 127, 127);
+  }
+
+  .bannertext-mobile button {
+    display: flex;
+    justify-content: center;
   }
 
   .information-image-mobile {
@@ -352,15 +369,11 @@ footer div a {
     width: 100%;
   }
 
-  .information-image-mobile img {
-    width: 100%;
-  }
-
   .information-content-mobile {
     padding-left: 1rem;
   }
 
-  .course-list-mobile {
+  .course-list-mobile h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
