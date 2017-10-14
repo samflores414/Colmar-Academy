@@ -218,7 +218,7 @@ header nav ul li a {
 
 .course-container h4, .course-container p {
   font-weight: normal;
-  color: rgb(165, 162, 162)
+  color: rgb(165, 162, 162);
   margin-left: 1rem;
 }
 
@@ -321,7 +321,7 @@ footer div a {
   #information,
   #information .left,
   header nav ul li,
-  #courses,
+  #courses-mobile,
   .course-container img,
   .course-container h4,
   .course-container p,
